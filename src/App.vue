@@ -6,12 +6,22 @@
 </template>
 
 <script>
+import axios from 'axios'
 import HelloWorld from './components/HelloWorld.vue'
+
 
 export default {
   name: 'App',
   components: {
     HelloWorld
+  },
+  mounted() {
+    let url = 'www.baidu.com'
+    axios.get(url).then(res => {
+      console.log(res)
+    }, () => {
+      throw new Error('请求地址错误')
+    })
   }
 }
 </script>

@@ -1,13 +1,13 @@
 module.exports = {
     devServer: {
-        proxy: {
-            '/api': {
-                target: '',
-                changeOrigin: true,
-                pathRewrite: {
-                    '/api': ''
-                }
-            }
-        }
+        // proxy: {
+        //     '/api': {
+        //         target: '',
+        //         changeOrigin: true,
+        //         pathRewrite: {
+        //             '/api': ''
+        //         }
+        //     }
+        // }
     }
 }
